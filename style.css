@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: rgb(25, 25, 25);
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+    overflow-x: hidden; /* отключает горизонтальный скролл */
+    overflow-y: scroll; /* включает вертикальный скролл */
+}
+
+h1 {
+    color: rgb(227 255 108);
+    font-size: 50px;
+}
+
+header {
+    height: 80px;
+}
+
+footer {
+    height: 200px;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container {
+    width: 60%;
+    margin: auto;
+}
+
+.block {
+    height: 170px;
+    width: 220px;
+    background-color: rgb(74, 121, 74);
+}
+
+.img-line {
+    position: absolute;
+    display: inline-flex;
+    animation: slidein var(--t) linear infinite;
+}
+
+.img-line2 {
+    display: inline-flex;
+    animation: slidein2 var(--t) linear infinite;
+}
+
+.flex-img {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.img {
+    margin: 10px;
+    border-radius: 5px;
+    width: 320px;
+    height: 320px;
+}
+
+@keyframes slidein {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slidein2 {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
